@@ -22,9 +22,9 @@ void func(float i, float j, float k){
 
 int main(){
     float a, b, c;
-    printf("Digite um número: "); scanf("%f", a);
-    printf("Digite um número: "); scanf("%f", b);
-    printf("Digite um número: "); scanf("%f", c);
+    printf("Digite um número: \n"); scanf("%f", &a);
+    printf("Digite um número: \n"); scanf("%f", &b);
+    printf("Digite um número: \n"); scanf("%f", &c);
     func(a,b,c);
     return 0;
 }
