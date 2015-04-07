@@ -1,11 +1,13 @@
 #include <stdio.h>
-int main(){
-    int a; float b;
-    scanf("%d", a);
-    b = a%2;
-    if(b == 0)
-         printf("É par\n");
+void parimpar(int i){
+    if(i%2 == 0)
+         printf("Ã‰ par\n");
     else
-         printf("É ímpar\n");
+         printf("Ã‰ Ã­mpar\n");
+}
+int main(){
+    int a; 
+    scanf("%d", &a);
+    parimpar(a);
     return 0;
 }
