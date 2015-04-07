@@ -1,26 +1,30 @@
 #include <stdio.h>
-int main(){
-    float a, b, c;
-    printf("Digite um n˙mero: "); scanf("%f", a);
-    printf("Digite um n˙mero: "); scanf("%f", b);
-    printf("Digite um n˙mero: "); scanf("%f", c);
-    if (a > b && a > c){
-          if (b > c)
-                printf("%f%f%f\n", a, b, c);
+void func(float i, float j, float k){
+    if (i > j && i > k){
+          if (i > j)
+                printf("%f %f %f\n", i, j, k);
           else
-                printf("%f%f%f\n", a, c, b);
+                printf("%f %f %f\n", i, k, j);
     }
-    else if (b > a && b > c){
-          if (a > c)
-                printf("%f%f%f\n", b, a, c);
+    else if (j > i && j > k){
+          if (i > k)
+                printf("%f %f %f\n", j, i, k);
           else
-                printf("%f%f%f\n", b, c, a);
+                printf("%f %f %f\n", j, k, i);
     }
     else{
-          if (a > b)
-                printf("%f%f%f\n", c, a, b);
+          if (i > j)
+                printf("%f %f %f\n", k, i, j);
           else
-                printf("%f%f%f\n", c, b, a);
+                printf("%f %f %f\n", k, j, i);
     }
+}
+
+int main(){
+    float a, b, c;
+    printf("Digite um n√∫mero: "); scanf("%f", a);
+    printf("Digite um n√∫mero: "); scanf("%f", b);
+    printf("Digite um n√∫mero: "); scanf("%f", c);
+    func(a,b,c);
     return 0;
 }
