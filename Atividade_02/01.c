@@ -20,9 +20,12 @@ void conc(float a, float b, float c){
 }
 int main(){
     float a, b, c;
-    printf("Digite a nota do trabalho de lab.: "); scanf("%f", &a);
-    printf("Digite a nota da avaliação semestral: "); scanf("%f", &b);
-    printf("Digite a nota do exame final: "); scanf("%f", &c);
+    printf("Digite a nota do trabalho de lab.: \n"); 
+    scanf("%f", &a);
+    printf("Digite a nota da avaliação semestral: \n"); 
+    scanf("%f", &b);
+    printf("Digite a nota do exame final: \n"); 
+    scanf("%f", &c);
     conc(a, b, c);
     return 0;
 }
