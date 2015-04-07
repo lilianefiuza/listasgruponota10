@@ -1,5 +1,5 @@
 #include <stdio.h>
-float conc(float a, float b, float c){
+void conc(float a, float b, float c){
       float m;
       m = (a*2 + b*3 + c*5)/10;
       if(m >= 8){
@@ -21,8 +21,8 @@ float conc(float a, float b, float c){
 int main(){
     float a, b, c;
     printf("Digite a nota do trabalho de lab.: "); scanf("%f", &a);
-    printf("Digite a nota da avaliação semestral: "); scanf("%f", &b);
+    printf("Digite a nota da avaliaÃ§Ã£o semestral: "); scanf("%f", &b);
     printf("Digite a nota do exame final: "); scanf("%f", &c);
-    printf("%f", conc(a, b, c));
+    conc(a, b, c);
     return 0;
 }
